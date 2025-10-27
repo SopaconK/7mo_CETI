@@ -1,0 +1,24 @@
+# ignore all logs
+*.log
+*.exe
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pre
+*.synctex.gz
+*.in
+*.bin
+*.adf
+*.adf~
+*.asm~
+*.hex
+*.hex~
+*.mcu8051ide
+*.mp4
+*.mcu8051ide~
+*.lst~
+.gitignore
+*.sh
+/.vscode
