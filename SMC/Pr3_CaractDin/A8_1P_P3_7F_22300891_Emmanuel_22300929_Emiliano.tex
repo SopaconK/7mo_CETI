@@ -1,0 +1,458 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Practica 3: Caracteristicas Dinámicas de los Instrumentos}
+\subtitle{Sistemas de Medicion y Control 18MPEDS0730 \\ Ago-Dic 2025 \\ Centro de Enseñanza Tecnica Industrial Plantel Colomos\\Tgo. en Desarrollo de Software \\ Academia: Sistemas Electrónicos\\Profesor: Diana Marisol Figueroa Flores }
+\date{27 de Agosto de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 \\ \and Emiliano Arzate 22300929 7F1 \\}
+
+
+\begin{document}
+
+\maketitle
+\begin{center}
+   \includegraphics[scale=0.15]{../../cetilogo.jpg} 
+\end{center}
+\newpage
+
+
+\section{Objetivo}
+
+\textbf{Objetivo General:}
+Reconocer las características dinámicas de algunos instrumentos de medición.
+\\
+
+
+\textbf{Objetivos Específicos:} 
+Identificar las características dinámicas de un multímetro y un osciloscopio, mediante la utilización de manuales correspondiente a cada tipo de instrumento de medición.
+
+\section{Desarrollo Teórico}
+
+\subsection{Resumen }
+
+\indicacion{
+   Elaborar un resumen las características dinámicas de los instrumentos de medición. Anexar las referencias bibliográficas una referencia deberá ser virtual y la otra de un libro, considerando el formato APA correspondiente al tipo de referencia.
+}
+
+\subsection{Material}
+
+\indicacion{
+Anotar el material y equipo para llevar a cabo la práctica agregando los valores teóricos.}
+
+\subsection{Caracteristicas Electricas de los Componentes}
+\indicacion{
+   Anexar características eléctricas de todos los componentes a utilizar, así como los voltajes y corrientes máximas de trabajo, distribución de terminales, etc.
+}
+
+\subsection{Caracteristicas Dinámicas de los Instrumentos}
+\indicacion{
+  Anexar características dinámicas de los diferentes tipos de instrumentos, así como las características eléctricas de todos los componentes a utilizar los voltajes y corrientes máximas de trabajo, distribución de terminales, etc.
+}
+
+
+\subsection{Diagrama a Bloques}
+
+\subsection{Diagrama Electrico}
+
+\indicacion{
+    Dibujar el Diagrama eléctrico utilizando algún programa para elaborar circuitos electrónicos, sin olvidar el valor de los componentes reales.
+}
+
+\subsection{Calculos}
+\indicacion{
+Realizar los cálculos correspondientes para los circuitos: emisor común por divisor de voltaje, amplificador a pequeña señal con transistores tanto en corriente directa como en corriente alterna, circuito inversor o no inversor en corriente directa y corriente alterna sin olvidar anexar las señales teóricas con sus diagramas y parámetros correspondientes. Nota anexa el número de horas que consideres necesario para la realización de los cálculos teóricos.
+}
+
+
+% --------------------------------------------------------------------
+% Circuito 1: Amplificador Inversor en CD
+% --------------------------------------------------------------------
+\subsubsection{Circuito 1: Amplificador Inversor con TL082 (Análisis en CD)}
+
+Para un amplificador operacional ideal, la diferencia de potencial entre sus entradas es nula. Dado que la entrada no inversora ($V_+$) está conectada a tierra (0V), se crea una \textbf{tierra virtual} en la entrada inversora ($V_-$).
+\begin{equation}
+    V_+ = V_- = 0 \, V
+\end{equation}
+La corriente que fluye a través de $R_1$ es igual a la que fluye por $R_f$, ya que la impedancia de entrada del op-amp es infinita.
+\begin{align*}
+    I_1 &= I_f \\
+    \frac{V_{in} - V_-}{R_1} &= \frac{V_- - V_{out}}{R_f}
+\end{align*}
+Sustituyendo $V_- = 0V$:
+\begin{equation}
+    \frac{V_{in}}{R_1} = \frac{-V_{out}}{R_f}
+\end{equation}
+La ganancia en lazo cerrado para CD ($A_{v,dc}$) es:
+\begin{equation}
+    A_{v,dc} = \frac{V_{out}}{V_{in}} = -\frac{R_f}{R_1}
+\end{equation}
+
+
+\begin{align*}
+    A_{v,dc} &= -\frac{10 \, k\Omega}{1 \, k\Omega} = -10 \\
+    V_{out} &= A_{v,dc} \times V_{in} = -10 \times 0.5 \, V = \mathbf{-5 \, V}
+\end{align*}
+
+
+% --------------------------------------------------------------------
+% Circuito 2: Amplificador Inversor en CA
+% --------------------------------------------------------------------
+\subsubsection{Circuito 2: Amplificador Inversor con TL082 (Análisis en CA)}
+
+Dado que el circuito solo contiene resistencias, su comportamiento es independiente de la frecuencia (en el rango de operación del op-amp). La ganancia de voltaje en CA ($A_{v,ac}$) es idéntica a la de CD.
+\begin{equation}
+    A_{v,ac} = -\frac{R_f}{R_1} = -10
+\end{equation}
+
+%\subsection{Cálculo Específico}
+La señal de salida $v_{out}(t)$ será la señal de entrada multiplicada por la ganancia.
+\begin{align*}
+    v_{out}(t) &= A_{v,ac} \times v_{in}(t) \\
+    v_{out}(t) &= -10 \times (20 \, mV \sin(2\pi \cdot 1000t)) \\
+    v_{out}(t) &= -200 \, mV \sin(2\pi \cdot 1000t)
+\end{align*}
+
+
+
+
+% --------------------------------------------------------------------
+% Circuito 3: Amplificador BJT en CD (Polarización)
+% --------------------------------------------------------------------
+\subsubsection{Circuito 3: Amplificador BJT 2N2222 (Análisis en CD)}
+
+Se formalizan los cálculos de la imagen de referencia.
+\begin{enumerate}
+    \item \textbf{Resistencia de Emisor ($R_E$):} Se establece $V_E \approx 0.1 V_{CC} = 1.2 \, V$.
+    \begin{equation*}
+        R_E = \frac{V_E}{I_E} \approx \frac{V_E}{I_{C_Q}} = \frac{1.2 \, V}{0.002 \, A} = 600 \, \Omega \rightarrow \text{Valor comercial: } \mathbf{680 \, \Omega}
+    \end{equation*}
+
+    \item \textbf{Resistencia de Colector ($R_C$):}
+    \begin{equation*}
+        R_C = \frac{V_{CC} - V_{CE_Q} - V_E}{I_{C_Q}} = \frac{12 \, V - 6 \, V - 1.2 \, V}{0.002 \, A} = \frac{4.8 \, V}{0.002 \, A} = 2.4 \, k\Omega \rightarrow \text{Valor comercial: } \mathbf{2.2 \, k\Omega}
+    \end{equation*}
+    
+    \item \textbf{Voltaje de Base ($V_B$):} Se asume $V_{BE} = 0.65 \, V$ (según la imagen).
+    \begin{equation*}
+        V_B = V_E + V_{BE} = 1.2 \, V + 0.65 \, V = 1.85 \, V
+    \end{equation*}
+    
+    \item \textbf{Corrientes ($I_B, I_{div}$):}
+    \begin{align*}
+        I_B &= \frac{I_{C_Q}}{\beta} = \frac{2 \, mA}{50} = 40 \, \mu A \\
+        I_{div} &= 10 \times I_B = 10 \times 40 \, \mu A = 400 \, \mu A
+    \end{align*}
+    
+    \item \textbf{Resistencias del Divisor ($R_1, R_2$):}
+    \begin{align*}
+        R_2 &= \frac{V_B}{I_{div}} = \frac{1.85 \, V}{0.0004 \, A} = 4.625 \, k\Omega \rightarrow \text{Valor comercial: } \mathbf{4.7 \, k\Omega} \\
+        R_1 &= \frac{V_{CC} - V_B}{I_{div} + I_B} = \frac{12 \, V - 1.85 \, V}{400 \, \mu A + 40 \, \mu A} = \frac{10.15 \, V}{0.00044 \, A} \approx 23 \, k\Omega \rightarrow \text{Valor comercial: } \mathbf{24 \, k\Omega} \text{ o } \mathbf{27 \, k\Omega}
+    \end{align*}
+\end{enumerate}
+
+%\subsection{Punto de Operación Teórico (Q-point)}
+Los valores de CD esperados en el circuito son $I_{C_Q} \approx 2 \, mA$ y $V_{CE_Q} \approx 6 \, V$.
+
+
+
+% --------------------------------------------------------------------
+% Circuito 4: Amplificador BJT en CA
+% --------------------------------------------------------------------
+\subsubsection{Circuito 4: Amplificador BJT 2N2222 (Análisis en CA)}
+
+\begin{enumerate}
+    \item \textbf{Resistencia interna de emisor ($r_e$):}
+    \begin{equation*}
+        r_e = \frac{V_T}{I_E} \approx \frac{26 \, mV}{I_{C_Q}} = \frac{26 \, mV}{2 \, mA} = 13 \, \Omega
+    \end{equation*}
+    
+    \item \textbf{Impedancia de Entrada del Amplificador ($Z_{in}$):}
+    El capacitor de bypass $C_E$ cortocircuita $R_E$ para la señal de CA.
+    \begin{align*}
+        Z_{base} &= \beta \times r_e = 50 \times 13 \, \Omega = 650 \, \Omega \\
+        Z_{in} &= R_1 || R_2 || Z_{base} = 27 \, k\Omega || 4.7 \, k\Omega || 650 \, \Omega \approx \mathbf{550 \, \Omega}
+    \end{align*}
+    
+    \item \textbf{Impedancia de Salida del Amplificador ($Z_{out}$):}
+    \begin{equation*}
+        Z_{out} \approx R_C = \mathbf{2.2 \, k\Omega}
+    \end{equation*}
+
+    \item \textbf{Ganancia de Voltaje ($A_v$):} La ganancia se ve afectada por la resistencia de carga $R_L$.
+    \begin{align*}
+        R'_{C} &= R_C || R_L = 2.2 \, k\Omega || 10 \, k\Omega = \frac{2.2 \times 10}{2.2 + 10} \, k\Omega \approx 1.8 \, k\Omega \\
+        A_v &= -\frac{R'_{C}}{r_e} = -\frac{1800 \, \Omega}{13 \, \Omega} \approx \mathbf{-138.5}
+    \end{align*}
+\end{enumerate}
+
+\textbf{Resultado Esperado para una Entrada de 10 mV}
+Se aplica una señal $v_{in}(t) = 10 \, mV \sin(\omega t)$.
+\begin{align*}
+    v_{out}(t) &= A_v \times v_{in}(t) \\
+    v_{out}(t) &= -138.5 \times (10 \, mV \sin(\omega t)) \\
+    v_{out}(t) &= -1385 \, mV \sin(\omega t) = \mathbf{-1.385 \, V \sin(\omega t)}
+\end{align*}
+Se espera una señal de salida senoidal, sin distorsión, con una amplitud de \textbf{1.385 V} e invertida en fase 180° con respecto a la entrada.
+
+
+\subsection{Tabla de Valores Teoricos de circuito emisor común con CD}
+\indicacion{
+Agregar la tabla de valores teóricos de circuito emisor común con divisor de voltaje del amplificador por divisor de voltaje en corriente directa
+}
+
+\begin{center}
+\begin{tabular}{|p{3cm}|c|c|c|}
+\hline
+\textbf{Ganancia del transistor hfe}& \textbf{Corriente de base ($I_b$)} & \textbf{Corriente de Colector ($I_C$)} & \textbf{Voltaje de CE}\\
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{Señales de entrada y salida a CA}
+\indicacion{
+    Anexar las señales de entrada y salida a corriente alterna con sus parámetros de corriente, voltaje, periodo y frecuencia.
+}
+
+\begin{center}
+\begin{tabular}{|p{6cm}|p{6cm}|}
+\hline
+&  \\[100px]
+\hline
+\end{tabular}
+\end{center}
+
+
+
+\subsection{Tabla de Valores Teoricos del Amplificador en CD}
+\indicacion{
+Agregar la tabla de valores teóricos de circuito emisor común con divisor de voltaje del amplificador por divisor de voltaje en corriente directa
+}
+
+\begin{center}
+\begin{tabular}{|p{3cm}|c|c|c|}
+\hline
+\textbf{Voltaje de Entrada}& \textbf{Voltaje de Salida} & \textbf{Voltaje Diferencial} & \textbf{$+V_{\text{sat}}, -V_{\text{sat}}$}\\
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{Señales de entrada y salida a CA}
+\indicacion{
+    Anexar las señales de entrada y salida a corriente alterna con sus parámetros de corriente, voltaje, periodo y frecuencia.
+}
+
+\begin{center}
+\begin{tabular}{|p{6cm}|p{6cm}|}
+\hline
+&  \\[100px]
+\hline
+\end{tabular}
+\end{center}
+
+\section{Desarrollo Practico}
+
+
+\subsection{Tabla de Valores Practicos de circuito emisor común con CD}
+\indicacion{
+Agregar la tabla de valores teóricos de circuito emisor común con divisor de voltaje del amplificador por divisor de voltaje en corriente directa
+}
+
+\begin{center}
+\begin{tabular}{|p{3cm}|c|c|c|}
+\hline
+\textbf{Ganancia del transistor hfe}& \textbf{Corriente de base ($I_b$)} & \textbf{Corriente de Colector ($I_C$)} & \textbf{Voltaje de CE}\\
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+& & & \\[4px]
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{Señales de entrada y salida a CA}
+\indicacion{
+    Anexar las señales de entrada y salida a corriente alterna con sus parámetros de corriente, voltaje, periodo y frecuencia.
+}
+
+\begin{center}
+\begin{tabular}{|p{6cm}|p{6cm}|}
+\hline
+&  \\[100px]
+\hline
+\end{tabular}
+\end{center}
+
+
+
+\subsection{Tabla de Valores Practicos del Amplificador en CD}
+\indicacion{
+Agregar la tabla de valores practicos de circuito emisor común con divisor de voltaje del amplificador por divisor de voltaje en corriente directa
+}
+
+\begin{center}
+\begin{tabular}{|p{3cm}|c|c|c|}
+\hline
+\textbf{Voltaje de Entrada}& \textbf{Voltaje de Salida} & \textbf{Voltaje Diferencial} & \textbf{$+V_{\text{sat}}, -V_{\text{sat}}$}\\
+\hline
+5V & -11.3V & 24V&  10.54V, -11.3V\\[4px]
+\hline
+5V & -10.48V & 24V& 11V, -10.48V\\[4px]
+\hline
+5V & -11.29V & 24V& +10.53V, -11.29V\\[4px]
+\hline
+5V & -10.48V& 24V& +10.99V, -10.48V\\[4px]
+\hline
+5V & -11.30V& 24V& +10.54V , -11.30V\\[4px]
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{Señales de entrada y salida a CA}
+\indicacion{
+    Anexar las señales de entrada y salida a corriente alterna con sus parámetros de corriente, voltaje, periodo y frecuencia.
+}
+
+\begin{center}
+\begin{tabular}{|p{6cm}|p{6cm}|}
+\hline
+&  \\[100px]
+\hline
+\end{tabular}
+\end{center}
+
+
+
+
+\section{Observaciones y Conclusiones}
+
+\subsection{Observaciones}
+\indicacion{
+    Elaborar las observaciones correspondientes.
+}
+
+\subsection{Conclusiones Personales}
+\indicacion{
+    Realizar las conclusiones correspondientes de forma personal anexando usos y aplicaciones de lo aprendido.
+}
+
+
+  
+%\nocite{*}
+
+%\printbibliography[
+%heading=bibintoc,
+%title={ . }
+%]
+    \end{document}

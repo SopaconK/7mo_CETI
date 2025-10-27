@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA5A1EC-BB16-4FB2-9B48-F8C0A309BCFD}|Complejos\\Complejos.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\complejos\\complejos\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EA5A1EC-BB16-4FB2-9B48-F8C0A309BCFD}|Complejos\\Complejos.csproj|solutionrelative:complejos\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA5A1EC-BB16-4FB2-9B48-F8C0A309BCFD}|Complejos\\Complejos.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\complejos\\complejos\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA5A1EC-BB16-4FB2-9B48-F8C0A309BCFD}|Complejos\\Complejos.csproj|solutionrelative:complejos\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA5A1EC-BB16-4FB2-9B48-F8C0A309BCFD}|Complejos\\Complejos.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\complejos\\complejos\\modelos\\complejo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA5A1EC-BB16-4FB2-9B48-F8C0A309BCFD}|Complejos\\Complejos.csproj|solutionrelative:complejos\\modelos\\complejo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA5A1EC-BB16-4FB2-9B48-F8C0A309BCFD}|Complejos\\Complejos.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\complejos\\complejos\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA5A1EC-BB16-4FB2-9B48-F8C0A309BCFD}|Complejos\\Complejos.csproj|solutionrelative:complejos\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA5A1EC-BB16-4FB2-9B48-F8C0A309BCFD}|Complejos\\Complejos.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\complejos\\complejos\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EA5A1EC-BB16-4FB2-9B48-F8C0A309BCFD}|Complejos\\Complejos.csproj|solutionrelative:complejos\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Complejo.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\modelos\\Complejo.cs",
+              "RelativeDocumentMoniker": "Complejos\\modelos\\Complejo.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\modelos\\Complejo.cs",
+              "RelativeToolTip": "Complejos\\modelos\\Complejo.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwCwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T18:56:51.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\App.xaml",
+              "RelativeDocumentMoniker": "Complejos\\App.xaml",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\App.xaml",
+              "RelativeToolTip": "Complejos\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-20T18:47:57.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Complejos\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\AssemblyInfo.cs",
+              "RelativeToolTip": "Complejos\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T18:47:54.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Complejos\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\MainWindow.xaml*",
+              "RelativeToolTip": "Complejos\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-20T18:44:40.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Complejos\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Complejos\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAMwBAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T18:44:35.13Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

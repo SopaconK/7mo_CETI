@@ -1,0 +1,143 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Practica 4: Practica de relevadores}
+\subtitle{Unidad I: Motores a CD Tema 1.1 \\ Sistemas Embebidos II 18MPEDS0729 \\ Ago-Dic 2025 \\ Centro de Enseñanza Tecnica Industrial Plantel Colomos\\Tgo. en Desarrollo de Software \\ Academia: Sistemas Digitales \\Profesor: Antonio Lozano Gonzáles }
+\date{17 de Septiembre de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 \\ \and Emiliano Arzate 22300929 7F1 \\}
+
+
+\begin{document}
+
+\maketitle
+\begin{center}
+   \includegraphics[scale=0.15]{../../cetilogo.jpg} 
+\end{center}
+\newpage
+
+\section{Objetivo}
+
+ Usar relevadores para el cambio de giro de un motor a CD y ver alguna aplicación diferente.
+\section{Desarrollo de la Práctica}
+
+\subsection{Condiciones de la Práctica}
+la cual consiste en usar dos reveladores, para
+poder hacer el cambio de giro de un motor a CD; deberán preguntar el
+sentido de giro del motor y programar los cuatro porcentajes de energía
+que se le entregara a dicho motor, dichas velocidades se entregaran
+también en un tiempo determinado por el usuario, que es de máximo dos
+minutos, 
+
+
+\subsection{Algoritmo o Diagrama de Flujo}
+
+\begin{enumerate}
+    \item Al iniciar el sistema, se realiza la configuración de la pantalla LCD, el teclado matricial y los pines necesarios para controlar los relevadores y el motor de corriente directa. Se muestra un mensaje de bienvenida en la pantalla para indicar el inicio de la práctica.
+    \item Posteriormente, el sistema solicita al usuario que seleccione el sentido de giro del motor, mostrando las opciones disponibles en la pantalla LCD. El usuario debe elegir entre giro a la izquierda o a la derecha utilizando el teclado.
+    \item Una vez seleccionado el sentido de giro, el sistema pide al usuario que ingrese el tiempo de operación del motor, el cual debe estar en el rango de uno a ciento veinte segundos. El usuario introduce el valor deseado mediante el teclado y lo confirma.
+    \item Con los datos ingresados, el sistema activa los relevadores para establecer el sentido de giro seleccionado y comienza a controlar el motor. La velocidad del motor se incrementa en cuatro etapas: primero al 25\%, luego al 50\%, después al 75\% y finalmente al 100\%, mostrando cada porcentaje en la pantalla LCD y manteniendo cada velocidad durante el tiempo especificado.
+    \item Al finalizar el ciclo de velocidades, el sistema apaga el motor y los relevadores, mostrando un mensaje de finalización en la pantalla LCD. Finalmente, espera unos segundos antes de reiniciar el proceso para permitir una nueva operación.
+\end{enumerate}
+
+\subsection{ Código C}
+
+\lstinputlisting[language=C]{p4_embebidos.ino}
+
+
+\section{Observaciones y Conclusiones}
+
+\begin{itemize}
+    \item Estamos realizando el puente H pero por nuestra cuenta.
+    \item Esta practica estuvo bastante compleja porque teniamos que ver donde/como poner los transisotres 
+    \item Además usamos un transistor que aguanta mas voltaje de los que solemos usualmente usar. 
+\end{itemize}
+  
+%\nocite{*}
+
+%\printbibliography[
+%heading=bibintoc,
+%title={ . }
+%]
+    \end{document}

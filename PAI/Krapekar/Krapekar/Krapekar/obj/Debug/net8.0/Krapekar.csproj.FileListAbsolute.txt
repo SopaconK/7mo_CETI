@@ -1,0 +1,14 @@
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\bin\Debug\net8.0\Krapekar.exe
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\bin\Debug\net8.0\Krapekar.deps.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\bin\Debug\net8.0\Krapekar.runtimeconfig.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\bin\Debug\net8.0\Krapekar.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\bin\Debug\net8.0\Krapekar.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\obj\Debug\net8.0\Krapekar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\obj\Debug\net8.0\Krapekar.AssemblyInfoInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\obj\Debug\net8.0\Krapekar.AssemblyInfo.cs
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\obj\Debug\net8.0\Krapekar.csproj.CoreCompileInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\obj\Debug\net8.0\Krapekar.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\obj\Debug\net8.0\refint\Krapekar.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\obj\Debug\net8.0\Krapekar.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\obj\Debug\net8.0\Krapekar.genruntimeconfig.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Krapekar\Krapekar\Krapekar\obj\Debug\net8.0\ref\Krapekar.dll

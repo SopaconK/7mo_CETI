@@ -1,0 +1,14 @@
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\obj\Debug\net8.0\ComprStringArr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\obj\Debug\net8.0\ComprStringArr.AssemblyInfoInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\obj\Debug\net8.0\ComprStringArr.AssemblyInfo.cs
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\obj\Debug\net8.0\ComprStringArr.csproj.CoreCompileInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\bin\Debug\net8.0\ComprStringArr.exe
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\bin\Debug\net8.0\ComprStringArr.deps.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\bin\Debug\net8.0\ComprStringArr.runtimeconfig.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\bin\Debug\net8.0\ComprStringArr.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\bin\Debug\net8.0\ComprStringArr.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\obj\Debug\net8.0\ComprStringArr.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\obj\Debug\net8.0\refint\ComprStringArr.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\obj\Debug\net8.0\ComprStringArr.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\obj\Debug\net8.0\ComprStringArr.genruntimeconfig.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\ComprStringArr\ComprStringArr\obj\Debug\net8.0\ref\ComprStringArr.dll

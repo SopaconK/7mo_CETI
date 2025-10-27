@@ -1,0 +1,179 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+\definecolor{red1}{RGB}{255, 153, 153}
+\definecolor{green1}{RGB}{204, 255, 204}
+\definecolor{blue1}{RGB}{204, 255, 255}
+\definecolor{yellow1}{RGB}{255, 247, 160}
+
+\definecolor{red2}{RGB}{255, 102, 102}
+\definecolor{green2}{RGB}{108, 255, 108}
+\definecolor{blue2}{RGB}{94, 204, 255}
+\definecolor{yellow2}{RGB}{255, 250, 104}
+
+\definecolor{red2.5}{RGB}{255,76,76}
+\definecolor{green2.5}{RGB}{54, 247, 54}
+\definecolor{blue2.5}{RGB}{51, 189, 255}
+\definecolor{yellow2.5}{RGB}{255, 242, 52}
+
+
+\definecolor{red3}{RGB}{255, 51, 51}
+\definecolor{green3}{RGB}{0, 240, 0}
+\definecolor{blue3}{RGB}{9, 175, 255}
+\definecolor{yellow3}{RGB}{255, 234, 0}
+
+\definecolor{red3.5}{RGB}{229, 25, 25}
+\definecolor{green3.5}{RGB}{0, 194, 0}
+\definecolor{blue3.5}{RGB}{4, 143, 209}
+\definecolor{yellow3.5}{RGB}{255,220,0}
+
+\definecolor{red4}{RGB}{204, 0, 0}
+\definecolor{green4}{RGB}{0, 149, 0}
+\definecolor{blue4}{RGB}{0, 111, 164}
+\definecolor{yellow4}{RGB}{255, 206, 0}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+\title {8.- DOM y JS (Actividad 1)}
+\subtitle{Programación WEB I \\ Centro de Enseñanza Tecnica Industrial}
+\date{5 de Octubre de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1}
+
+
+\begin{document}
+
+\maketitle
+
+
+\begin{center}
+   \includegraphics[scale=0.15]{../cetilogo.jpg} 
+\end{center}
+\newpage
+%-------------------- RESUMEN --------------------
+\section{Resumen}
+El lenguaje JavaScript es uno de los pilares fundamentales del desarrollo web moderno. Su principal uso es dotar de interactividad y dinamismo a las páginas web, permitiendo manipular elementos, validar formularios, y responder a eventos del usuario.  
+En este trabajo se aborda su definición, sus principales características, y un ejemplo del uso del DOM (Document Object Model), el cual es una de las partes más importantes de este lenguaje.  
+
+%-------------------- DESARROLLO --------------------
+\section{Desarrollo}
+
+\subsection*{Definición de JavaScript}
+JavaScript es un lenguaje de programación interpretado, orientado a objetos y basado en prototipos, ampliamente utilizado para el desarrollo web. Fue creado por Brendan Eich en 1995 y desde entonces se ha convertido en un estándar gracias a su inclusión en todos los navegadores modernos.  
+Este lenguaje permite que las páginas web sean dinámicas, interactivas y respondan a las acciones del usuario sin necesidad de recargar la página.
+
+\subsection{Características principales}
+\begin{itemize}
+    \item Es un lenguaje interpretado, lo que significa que no necesita compilación.
+    \item Se ejecuta del lado del cliente, aunque también puede ejecutarse del lado del servidor con Node.js.
+    \item Tiene una sintaxis similar a C y Java, lo que facilita su aprendizaje.
+    \item Permite manipular elementos HTML y CSS a través del DOM.
+\end{itemize}
+
+\subsection{Ejemplo del DOM}
+El DOM (Document Object Model) es una representación estructurada del documento HTML. Permite que JavaScript acceda y modifique el contenido, estructura y estilo de una página web.
+
+\noindent
+Ejemplo básico:
+\begin{verbatim}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Hola Mundo</h1>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+
+    <script>
+        function cambiarTexto() {
+            document.getElementById("titulo").innerHTML = "Texto modificado con JavaScript";
+        }
+    </script>
+</body>
+</html>
+\end{verbatim}
+
+En este ejemplo, el código JavaScript utiliza el método \texttt{getElementById} para acceder al elemento con el identificador \texttt{titulo} y cambiar su contenido al hacer clic en el botón.  
+
+%-------------------- CONCLUSIÓN --------------------
+\section{Conclusión}
+JavaScript es un lenguaje esencial para el desarrollo web actual. Gracias al DOM, permite que los sitios sean dinámicos, interactivos y más atractivos para los usuarios. Además, su versatilidad lo ha llevado a ser utilizado no solo en navegadores, sino también en servidores y aplicaciones móviles.  
+
+%-------------------- BIBLIOGRAFÍA --------------------
+\section{Bibliografía}
+\begin{itemize}
+    \item Mozilla Developer Network (MDN). (s.f.). \textit{JavaScript}. Recuperado de: \url{https://developer.mozilla.org/es/docs/Web/JavaScript}
+    \item W3Schools. (s.f.). \textit{JavaScript Tutorial}. Recuperado de: \url{https://www.w3schools.com/js/}
+    \item GeeksforGeeks. (2023). \textit{What is DOM in JavaScript?}. Recuperado de: \url{https://www.geeksforgeeks.org/what-is-dom-in-javascript/}
+\end{itemize}
+
+\end{document}

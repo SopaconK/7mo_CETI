@@ -1,0 +1,203 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Practica 7: Medidor con flotador}
+\subtitle{Sistemas de Medicion y Control 18MPEDS0730 \\ Ago-Dic 2025 \\ Centro de Enseñanza Tecnica Industrial Plantel Colomos\\Tgo. en Desarrollo de Software \\ Academia: Sistemas Electrónicos\\Profesor: Diana Marisol Figueroa Flores }
+\date{16 de octubre de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 \\ \and Emiliano Arzate 22300929 7F1 \\}
+
+
+\begin{document}
+
+\maketitle
+\begin{center}
+   \includegraphics[scale=0.15]{../../cetilogo.jpg} 
+\end{center}
+\newpage
+
+
+\section{Objetivo}
+
+\textbf{Objetivo General:}
+Experimentar el funcionamiento a escala de un medidor de nivel.
+\\
+
+
+\textbf{Objetivos Específicos:} 
+Verificar el funcionamiento de un medidor de nivel de líquidos utilizando un medidor de flotador, y mandar la señal a la entrada analógica de un S.A.D
+
+\section{Desarrollo Teórico}
+
+\subsection{Resumen }
+
+\indicacion{
+Elaborar un resumen sobre los diferentes tipos de medidores de nivel de líquidos que utilicen flotador. Anexar las referencias bibliográficas, una referencia deberá ser virtual y la otra de un libro, considerando el formato APA correspondiente al tipo de referencia.}
+
+\subsection{Material}
+
+\indicacion{
+Anotar el material y equipo para llevar a cabo la práctica agregando los valores teóricos.}
+
+
+
+\subsection{Calculos}
+\indicacion{
+Realizar los cálculos correspondientes para el acoplamiento de la señal del termistor hacia la entrada analógica del sistema de adquisición de datos.
+}
+
+
+\subsection{Diagrama Nomenclatura ISA}
+
+
+\section{Desarrollo Practico}
+
+\subsection{Pasos}
+\indicacion{
+    Describe los pasos desde el inicio de la elaboración de la práctica hasta el término de la misma
+}
+
+\subsection{Diagrama Electrico}
+\indicacion{
+    Dibujar el Diagrama eléctrico utilizando algún programa para elaborar circuitos electrónicos, sin olvidar el valor de los componentes reales.
+}
+
+\subsection{Programa}
+
+\indicacion{
+    Anexa el programa utilizado para la realización de tu práctica.
+}
+
+
+\subsection{Valores Prácticos}
+\begin{center}
+\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Nivel}& \textbf{Nivel Binario} & \textbf{Mililtros} & \textbf{Distancia}\\
+\hline
+0 & 00000 & 0 & 0 \\[4px]
+\hline
+1 & 00001 &53 &8 \\ [4px]
+\hline
+2 & 00010 & 146 & 22 \\[4px] 
+\hline
+3 & 00011 &186 & 28\\ [4px]
+\hline
+4 &00100 & 253 & 38 \\[4px]
+\hline
+6& 00110& 300 & 45 \\[4px]
+\hline
+7 & 00111 & 366& 54\\ [4px]
+\hline
+8& 01000& 426& 64\\[4px]
+\hline
+9 & 01001 & 466& 70\\ [4px]
+\hline
+10& 01010& 513 & 77 \\[4px]
+
+\hline
+\end{tabular}
+\end{center}
+
+\section{Observaciones y Conclusiones}
+
+\subsection{Observaciones}
+\indicacion{
+    Elaborar las observaciones correspondientes.
+}
+
+\subsection{Conclusiones Personales}
+\indicacion{
+    Realizar las conclusiones correspondientes de forma personal anexando usos y aplicaciones de lo aprendido.
+}
+
+
+  
+%\nocite{*}
+
+%\printbibliography[
+%heading=bibintoc,
+%title={ . }
+%]
+    \end{document}

@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66B9E9BE-AE33-4C6F-A505-A49D60187D60}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B9E9BE-AE33-4C6F-A505-A49D60187D60}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66B9E9BE-AE33-4C6F-A505-A49D60187D60}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\consoleapp1\\consoleapp1\\test\\perro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B9E9BE-AE33-4C6F-A505-A49D60187D60}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\test\\perro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66B9E9BE-AE33-4C6F-A505-A49D60187D60}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\consoleapp1\\consoleapp1\\test\\paloma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B9E9BE-AE33-4C6F-A505-A49D60187D60}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\test\\paloma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66B9E9BE-AE33-4C6F-A505-A49D60187D60}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\consoleapp1\\consoleapp1\\test\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B9E9BE-AE33-4C6F-A505-A49D60187D60}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\test\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66B9E9BE-AE33-4C6F-A505-A49D60187D60}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\consoleapp1\\consoleapp1\\test\\volador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66B9E9BE-AE33-4C6F-A505-A49D60187D60}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\test\\volador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Volador.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\ConsoleApp1\\test\\Volador.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\test\\Volador.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\ConsoleApp1\\test\\Volador.cs",
+              "RelativeToolTip": "ConsoleApp1\\test\\Volador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T15:27:23.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Paloma.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\ConsoleApp1\\test\\Paloma.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\test\\Paloma.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\ConsoleApp1\\test\\Paloma.cs",
+              "RelativeToolTip": "ConsoleApp1\\test\\Paloma.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T15:21:44.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Perro.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\ConsoleApp1\\test\\Perro.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\test\\Perro.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\ConsoleApp1\\test\\Perro.cs",
+              "RelativeToolTip": "ConsoleApp1\\test\\Perro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T15:21:31.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\ConsoleApp1\\test\\Animal.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\test\\Animal.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\ConsoleApp1\\test\\Animal.cs",
+              "RelativeToolTip": "ConsoleApp1\\test\\Animal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T15:20:13.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T15:18:01.152Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

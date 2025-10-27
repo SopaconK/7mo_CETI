@@ -1,0 +1,29 @@
+.container{
+     display: flex;
+
+}
+
+.box{
+    flex: 1;
+    display: flex;
+     flex-direction: column; 
+     align-items: center;
+    justify-content: center;
+}
+
+#principal{
+    margin: 50px 150px 50px 150px;
+    border: 1px solid #22C55E;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+h1,h2, hr{
+    color: #22C55E;
+}
+
+body{
+    font-family: Inter;
+}
+img{
+    border: 3px solid #000000;
+}

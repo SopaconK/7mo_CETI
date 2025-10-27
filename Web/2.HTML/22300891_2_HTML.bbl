@@ -1,0 +1,119 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global/global}
+    \entry{jimenez-2019}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=189e561f9f874b0284e906edc3bdf28f}{%
+           family={Jiménez},
+           familyi={J\bibinitperiod},
+           given={Juan\bibnamedelimb Diego\bibnamedelima Pérez},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{189e561f9f874b0284e906edc3bdf28f}
+      \strng{fullhash}{189e561f9f874b0284e906edc3bdf28f}
+      \strng{fullhashraw}{189e561f9f874b0284e906edc3bdf28f}
+      \strng{bibnamehash}{189e561f9f874b0284e906edc3bdf28f}
+      \strng{authorbibnamehash}{189e561f9f874b0284e906edc3bdf28f}
+      \strng{authornamehash}{189e561f9f874b0284e906edc3bdf28f}
+      \strng{authorfullhash}{189e561f9f874b0284e906edc3bdf28f}
+      \strng{authorfullhashraw}{189e561f9f874b0284e906edc3bdf28f}
+      \field{labelalpha}{Jim19}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{{Qué es HTML5}}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://openwebinars.net/blog/que-es-html5
+      \endverb
+      \verb{url}
+      \verb https://openwebinars.net/blog/que-es-html5
+      \endverb
+    \endentry
+    \entry{varangouli-2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1df5e980c0b29de13d350c251e3a395}{%
+           family={Varangouli},
+           familyi={V\bibinitperiod},
+           given={Erika},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1df5e980c0b29de13d350c251e3a395}
+      \strng{fullhash}{f1df5e980c0b29de13d350c251e3a395}
+      \strng{fullhashraw}{f1df5e980c0b29de13d350c251e3a395}
+      \strng{bibnamehash}{f1df5e980c0b29de13d350c251e3a395}
+      \strng{authorbibnamehash}{f1df5e980c0b29de13d350c251e3a395}
+      \strng{authornamehash}{f1df5e980c0b29de13d350c251e3a395}
+      \strng{authorfullhash}{f1df5e980c0b29de13d350c251e3a395}
+      \strng{authorfullhashraw}{f1df5e980c0b29de13d350c251e3a395}
+      \field{labelalpha}{Var23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{{Lista de tags HTML: hoja de trucos HTML. ¿Qué son y para qué sirven?}}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://es.semrush.com/blog/lista-de-html-tags
+      \endverb
+      \verb{url}
+      \verb https://es.semrush.com/blog/lista-de-html-tags
+      \endverb
+    \endentry
+    \entry{brandominus-creatividad-estrategica-no-date}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=debe1f8f655965c0cba68968e887b7d1}{%
+           family={estrategica},
+           familyi={e\bibinitperiod},
+           given={Brandominus\bibnamedelima Creatividad},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{debe1f8f655965c0cba68968e887b7d1}
+      \strng{fullhash}{debe1f8f655965c0cba68968e887b7d1}
+      \strng{fullhashraw}{debe1f8f655965c0cba68968e887b7d1}
+      \strng{bibnamehash}{debe1f8f655965c0cba68968e887b7d1}
+      \strng{authorbibnamehash}{debe1f8f655965c0cba68968e887b7d1}
+      \strng{authornamehash}{debe1f8f655965c0cba68968e887b7d1}
+      \strng{authorfullhash}{debe1f8f655965c0cba68968e887b7d1}
+      \strng{authorfullhashraw}{debe1f8f655965c0cba68968e887b7d1}
+      \field{labelalpha}{est}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Listado de elementos o etiquetas HTML5}}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.brandominus.com/manuales/manual_html5.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.brandominus.com/manuales/manual_html5.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

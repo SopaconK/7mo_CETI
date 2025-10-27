@@ -1,0 +1,119 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Resumen sobre Actuadores Lineales y Relevadores}
+\subtitle{Sistemas Embebidos II}
+\date{27 de Agosto de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 }
+
+
+\begin{document}
+
+\maketitle
+
+\section{Pistones}
+Los actuadores son dispositivos que promueven el funcionamiento de un mecanismo, y aunque el actuador humano es el más común, 
+la automatización ha llevado al desarrollo de actuadores automáticos. Estos se clasifican principalmente en dos categorías: rotatorios y lineales.
+ Los actuadores lineales, comúnmente conocidos como pistones, se caracterizan por generar una fuerza en línea recta. 
+ Existen diferentes tipos:
+ \begin{itemize}
+    \item Actuadores lineales sin contgrol
+    \item Actuadores lineales con dos pulsadores de
+fin de carrera, que permiten detectar
+cuando el émbolo ha alcanzado una
+posición terminal.
+    \item Actuadores lineales con potenciometro, que proporciona una medida analógica de
+la posición del émbolo.
+ \end{itemize}
+ Su estructura interna consta de tres componentes 
+ principales: un motor eléctrico , un mecanismo reductor compuesto por varios engranajes y un tornillo sinfín. 
+El funcionamiento se basa en que el motor, a través del reductor, hace girar el tornillo sinfín, el cual empuja un émbolo o vástago que puede extenderse o retraerse según el sentido del giro. 
+
+\section{Relevador}
+El relevador, o relé, es un dispositivo de naturaleza electromagnética que opera como un interruptor controlado por medio de un circuito eléctrico. Su principio de funcionamiento se basa en una bobina que, al recibir una corriente eléctrica, genera un campo magnético y se convierte en un electroimán. Este campo magnético atrae un conjunto de contactos, forzándolos a cambiar de posición: el contacto que estaba abierto se cierra, y el que estaba normalmente cerrado se abre. Entre sus características generales destacan el aislamiento eléctrico entre los terminales de entrada y los de salida , la capacidad de soportar sobrecargas y la definición de sus dos estados de trabajo por impedancia: alta en estado abierto y baja en estado cerrado. Existen diversos tipos, como los electromecánicos convencionales , los de núcleo móvil que usan un émbolo para manejar altas corrientes , los relés polarizados que incluyen un imán permanente , los de estado sólido que emplean un circuito electrónico en lugar de una bobina , y los relés tipo Reed, cuyos contactos están sellados en una ampolla de vidrio. Sus aplicaciones son variadas, incluyendo el cambio de giro en motores, automatización, procesos industriales y alarmas
+
+\section{Solenoides}
+Un solenoide es un dispositivo físico que consiste en una bobina de material conductor enrollado, diseñado para crear un campo magnético de gran intensidad y uniformidad en su interior cuando una corriente eléctrica lo recorre. Este dispositivo electromagnético es utilizado para aplicar una fuerza de tipo lineal. Su estructura se compone de un embobinado hueco dentro de un contenedor, y un émbolo ferromagnético que puede desplazarse. Cuando la corriente fluye a través de la bobina, el campo magnético generado atrae al émbolo hacia el centro del embobinado. Para que el émbolo regrese a su posición original una vez que se interrumpe la corriente, se suele utilizar un resorte que aplica una fuerza de resistencia. Cuando el solenoide cuenta con un núcleo, la corriente provoca que este comprima un objeto (como un resorte o un líquido), y al detenerse la corriente, el objeto se expande y empuja el núcleo con fuerza, generando una acción mecánica. Existen varios tipos de solenoides, incluyendo los de tiro o disparo, cuyo émbolo se desplaza mientras está energizado ; los de cierre, que contienen un imán permanente ; y los rotatorios, en los que el émbolo gira un ángulo fijo
+\end{document}

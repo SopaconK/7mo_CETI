@@ -1,0 +1,164 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Practica 1: Práctica de control del motor a CD.}
+\subtitle{Unidad I: Motores a CD Tema 1.1 \\ Sistemas Embebidos II 18MPEDS0729 \\ Ago-Dic 2025 \\ Centro de Enseñanza Tecnica Industrial Plantel Colomos\\Tgo. en Desarrollo de Software \\ Academia: Sistemas Digitales \\Profesor: Antonio Lozano Gonzáles }
+\date{27 de Agosto de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 \\ \and Emiliano Arzate 22300929 7F1 \\}
+
+
+\begin{document}
+
+\maketitle
+\begin{center}
+   \includegraphics[scale=0.15]{../../cetilogo.jpg} 
+\end{center}
+\newpage
+
+\section{Objetivo}
+
+Variar la velocidad de un motor a CD,  utilizando PWM y en cualquier tiempo programado.
+
+
+\section{Desarrollo de la Práctica}
+
+\subsection{Condiciones de la Práctica}
+
+Realizar el control de un motor a CD. Deberá acelerar desde cero hasta
+la velocidad máxima en un tiempo estipulado.  acompañado del reporte
+respectivo. Utilizar el teclado para pedir el tiempo y, la pantalla para
+mostrar las preguntas necesarias y, el porcentaje de aceleración del
+motor.  \\
+También deberá tener un instrumento o sensor que muestre las revoluciones por minuto del motor. Que se verán en la pantalla.
+\subsection{Algoritmo o Diagrama de Flujo}
+
+\begin{itemize}
+\item En la inicialización se configura la pantalla LCD, el teclado matricial y los pines del motor y sensor.
+Muestra una pantalla inicial pidiendo el tiempo de aceleración.
+
+
+\item Ingreso de tiempo:
+
+El usuario ingresa el tiempo (en segundos) usando el teclado.
+Si presiona '*', inicia el proceso de aceleración.
+
+
+\item Aceleración del motor:
+
+El motor aumenta su velocidad gradualmente desde 0 hasta el máximo durante el tiempo ingresado.
+En cada paso, actualiza la potencia del motor (con PWM) y calcula las RPM usando un sensor y una rutina de interrupción.
+Muestra el porcentaje de aceleración y las RPM en la pantalla LCD.
+
+\item Velocidad máxima:
+
+Mantiene el motor a velocidad máxima por 5 segundos, mostrando las RPM.
+
+\item Finalización:
+
+Apaga el motor, muestra un mensaje de finalización y vuelve a la pantalla inicial.
+
+\end{itemize}
+
+\subsection{ Código C}
+
+\lstinputlisting[language=C]{p1_Embebidos2/p1_Embebidos2.ino}
+
+
+\section{Observaciones y Conclusiones}
+
+\begin{itemize}
+    \item Nuestro motor al ser más de potenica no tiene tantas RPM, lo cuál creo facilito la práctica.
+    \item Está complicado mantener que el motor no se pare con el sensor que mide RPM.
+    \item Está practica a sido de las más complicadas, ya que implica unir el puente H, el motor, y el sensor que mide RPM, todo esto además de un algoritmo algo más 
+    complejo debido al cambio gradual de velocidad, pero al ya haber usado el motor y puente H en nuestro proyecto de Embebidos 1 se nos facilito bastante. 
+\end{itemize}
+  
+%\nocite{*}
+
+%\printbibliography[
+%heading=bibintoc,
+%title={ . }
+%]
+    \end{document}

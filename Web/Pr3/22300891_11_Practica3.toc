@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Objetivo}{2}{section.2}%
+\contentsline {section}{\numberline {2}Diagramas}{3}{section.3}%
+\contentsline {subsection}{\numberline {2.1}Wireframe}{3}{subsection.4}%
+\contentsline {subsection}{\numberline {2.2}Prototipo al Inicio}{4}{subsection.5}%
+\contentsline {subsection}{\numberline {2.3}Justificación}{4}{subsection.6}%
+\contentsline {subsection}{\numberline {2.4}Retroalimentación}{4}{subsection.7}%
+\contentsline {subsection}{\numberline {2.5}Prototipo}{5}{subsection.8}%
+\contentsline {section}{\numberline {3}Codigo}{5}{section.9}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

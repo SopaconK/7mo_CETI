@@ -1,0 +1,152 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Practica 3: Practica de servomotor}
+\subtitle{Unidad I: Motores a CD Tema 1.1 \\ Sistemas Embebidos II 18MPEDS0729 \\ Ago-Dic 2025 \\ Centro de Enseñanza Tecnica Industrial Plantel Colomos\\Tgo. en Desarrollo de Software \\ Academia: Sistemas Digitales \\Profesor: Antonio Lozano Gonzáles }
+\date{3 de Septiembre de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 \\ \and Emiliano Arzate 22300929 7F1 \\}
+
+
+\begin{document}
+
+\maketitle
+\begin{center}
+   \includegraphics[scale=0.15]{../../cetilogo.jpg} 
+\end{center}
+\newpage
+
+\section{Objetivo}
+
+Mandar la secuencia de movimiento a un servomotor, para poder posicionar en cualquier angulo, de entre 0 a 180 grados
+
+\section{Desarrollo de la Práctica}
+
+\subsection{Condiciones de la Práctica}
+
+Realizar unas secuencias en un servomotor. Deberá el usuario del
+programa, poder elegir desde uno hasta 24 movimientos del servomotor.
+Una vez hecha la selección, la secuencia sera visible en el servomotor.
+Recordar que cada secuencia es un angulo al que se desplazara el
+servomotor, y dicho desplazamiento sera entre 0 y 180 grados, y que
+deberá quedarse entre tres y cinco segundos en dicha secuencia, para
+poder verlo y adjuntar el reporte respectivo. 
+Recordar el uso de la
+pantalla y el teclado para facilitar el acceso al control del servo y
+para visualizar el angulo en que esta.
+
+
+\subsection{Algoritmo o Diagrama de Flujo}
+
+\begin{enumerate}
+  \item Inicializa la pantalla LCD, el teclado matricial y el servo motor.
+\item Solicita al usuario ingresar un número entre 1 y 24 usando el teclado; el número se confirma presionando '*'.
+\item Muestra el número ingresado en la pantalla LCD.
+\item Solicita al usuario ingresar una cantidad igual de ángulos, uno por uno, usando el teclado.
+\item Almacena cada ángulo en un arreglo.
+\item Mueve el servo motor a cada uno de los ángulos ingresados, mostrando el valor en la pantalla LCD y esperando 3 segundos entre cada movimiento.
+\item Al finalizar, regresa el servo a la posición 0°.
+\end{enumerate}
+
+\subsection{ Código C}
+
+\lstinputlisting[language=C]{Pr3_embebidos2.ino}
+
+
+\section{Observaciones y Conclusiones}
+
+\begin{itemize}
+    \item El semestre pasado ya habiamos usado un servomotor 
+    \item Nuestro servomotor es uno con mayor promedia que el prmoedio, entonces ocupaba mas voltaje 
+    \item El cambio de 90° es el que mas potencia le costaba.
+    \item El servomotor sirve para tener un mayor control sobre que tanto esta girando algo. 
+\end{itemize}
+  
+%\nocite{*}
+
+%\printbibliography[
+%heading=bibintoc,
+%title={ . }
+%]
+    \end{document}

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Complejos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Complejos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtReal1" HorizontalAlignment="Left" Height="18" Margin="56,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" />
+        <TextBox x:Name="txtReal2" HorizontalAlignment="Left" Height="18" Margin="56,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="txtImg2" HorizontalAlignment="Left" Height="18" Margin="222,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="txtImg1" HorizontalAlignment="Left" Height="18" Margin="222,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="txtResultadoImg" HorizontalAlignment="Left" Height="18" Margin="625,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="txtResultadoReal" HorizontalAlignment="Left" Height="18" Margin="467,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <Button x:Name="cmdSumar" Content="Sumar" HorizontalAlignment="Left" Height="46" Margin="352,217,0,0" VerticalAlignment="Top" Width="128" Click="cmdSumarComplejos"/>
+
+    </Grid>
+</Window>

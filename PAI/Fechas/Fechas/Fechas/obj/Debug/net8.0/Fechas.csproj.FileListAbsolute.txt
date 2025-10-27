@@ -1,0 +1,14 @@
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\bin\Debug\net8.0\Fechas.exe
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\bin\Debug\net8.0\Fechas.deps.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\bin\Debug\net8.0\Fechas.runtimeconfig.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\bin\Debug\net8.0\Fechas.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\bin\Debug\net8.0\Fechas.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\obj\Debug\net8.0\Fechas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\obj\Debug\net8.0\Fechas.AssemblyInfoInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\obj\Debug\net8.0\Fechas.AssemblyInfo.cs
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\obj\Debug\net8.0\Fechas.csproj.CoreCompileInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\obj\Debug\net8.0\Fechas.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\obj\Debug\net8.0\refint\Fechas.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\obj\Debug\net8.0\Fechas.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\obj\Debug\net8.0\Fechas.genruntimeconfig.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Fechas\Fechas\Fechas\obj\Debug\net8.0\ref\Fechas.dll

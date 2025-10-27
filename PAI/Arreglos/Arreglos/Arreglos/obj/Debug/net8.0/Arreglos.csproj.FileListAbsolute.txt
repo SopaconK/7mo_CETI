@@ -1,0 +1,14 @@
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\bin\Debug\net8.0\Arreglos.exe
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\bin\Debug\net8.0\Arreglos.deps.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\bin\Debug\net8.0\Arreglos.runtimeconfig.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\bin\Debug\net8.0\Arreglos.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\bin\Debug\net8.0\Arreglos.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\obj\Debug\net8.0\Arreglos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\obj\Debug\net8.0\Arreglos.AssemblyInfoInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\obj\Debug\net8.0\Arreglos.AssemblyInfo.cs
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\obj\Debug\net8.0\Arreglos.csproj.CoreCompileInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\obj\Debug\net8.0\Arreglos.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\obj\Debug\net8.0\refint\Arreglos.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\obj\Debug\net8.0\Arreglos.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\obj\Debug\net8.0\Arreglos.genruntimeconfig.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Arreglos\Arreglos\Arreglos\obj\Debug\net8.0\ref\Arreglos.dll

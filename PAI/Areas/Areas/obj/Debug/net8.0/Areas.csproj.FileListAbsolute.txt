@@ -1,0 +1,14 @@
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\bin\Debug\net8.0\Areas.exe
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\bin\Debug\net8.0\Areas.deps.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\bin\Debug\net8.0\Areas.runtimeconfig.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\bin\Debug\net8.0\Areas.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\bin\Debug\net8.0\Areas.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\obj\Debug\net8.0\Areas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\obj\Debug\net8.0\Areas.AssemblyInfoInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\obj\Debug\net8.0\Areas.AssemblyInfo.cs
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\obj\Debug\net8.0\Areas.csproj.CoreCompileInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\obj\Debug\net8.0\Areas.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\obj\Debug\net8.0\refint\Areas.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\obj\Debug\net8.0\Areas.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\obj\Debug\net8.0\Areas.genruntimeconfig.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Areas\Areas\obj\Debug\net8.0\ref\Areas.dll

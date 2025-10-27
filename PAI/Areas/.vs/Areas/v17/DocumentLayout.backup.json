@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Areas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75654854-CF30-4478-A701-2ADA560F79D2}|Areas\\Areas.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\areas\\areas\\clases\\cuadrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75654854-CF30-4478-A701-2ADA560F79D2}|Areas\\Areas.csproj|solutionrelative:areas\\clases\\cuadrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75654854-CF30-4478-A701-2ADA560F79D2}|Areas\\Areas.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\areas\\areas\\clases\\triangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75654854-CF30-4478-A701-2ADA560F79D2}|Areas\\Areas.csproj|solutionrelative:areas\\clases\\triangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75654854-CF30-4478-A701-2ADA560F79D2}|Areas\\Areas.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\areas\\areas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75654854-CF30-4478-A701-2ADA560F79D2}|Areas\\Areas.csproj|solutionrelative:areas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75654854-CF30-4478-A701-2ADA560F79D2}|Areas\\Areas.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\areas\\areas\\clases\\figurasconarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75654854-CF30-4478-A701-2ADA560F79D2}|Areas\\Areas.csproj|solutionrelative:areas\\clases\\figurasconarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cuadrado.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Areas\\Areas\\Clases\\Cuadrado.cs",
+              "RelativeDocumentMoniker": "Areas\\Clases\\Cuadrado.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Areas\\Areas\\Clases\\Cuadrado.cs",
+              "RelativeToolTip": "Areas\\Clases\\Cuadrado.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T19:27:24.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FigurasConArea.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Areas\\Areas\\Clases\\FigurasConArea.cs",
+              "RelativeDocumentMoniker": "Areas\\Clases\\FigurasConArea.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Areas\\Areas\\Clases\\FigurasConArea.cs",
+              "RelativeToolTip": "Areas\\Clases\\FigurasConArea.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T19:19:57.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Triangulo.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Areas\\Areas\\Clases\\Triangulo.cs",
+              "RelativeDocumentMoniker": "Areas\\Clases\\Triangulo.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Areas\\Areas\\Clases\\Triangulo.cs",
+              "RelativeToolTip": "Areas\\Clases\\Triangulo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T19:19:29.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Areas\\Areas\\Program.cs",
+              "RelativeDocumentMoniker": "Areas\\Program.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Areas\\Areas\\Program.cs",
+              "RelativeToolTip": "Areas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T19:18:49.129Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

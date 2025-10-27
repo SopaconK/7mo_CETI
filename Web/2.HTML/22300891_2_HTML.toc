@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Resumen}{2}{section.2}%
+\contentsline {section}{\numberline {2}Desarrollo}{2}{section.3}%
+\contentsline {subsection}{\numberline {2.1}¿Qué es HTML5?}{2}{subsection.4}%
+\contentsline {subsection}{\numberline {2.2}Etiquetas}{2}{subsection.5}%
+\contentsline {subsection}{\numberline {2.3}Codigo}{5}{subsection.6}%
+\contentsline {subsection}{\numberline {2.4}Captura de Pantalla}{6}{subsection.34}%
+\contentsline {subsection}{\numberline {2.5}Actividad}{6}{subsection.35}%
+\contentsline {section}{\numberline {3}Conclusión}{6}{section.36}%
+\contentsline {section}{\numberline {4}Bibliografía}{7}{section.37}%
+\contentsline {section}{\nonumberline .}{7}{section*.39}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

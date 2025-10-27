@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polinomios", "Polinomios\Polinomios.csproj", "{DEDFD711-7468-4ECE-BE28-C1A4D021183B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEDFD711-7468-4ECE-BE28-C1A4D021183B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDFD711-7468-4ECE-BE28-C1A4D021183B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDFD711-7468-4ECE-BE28-C1A4D021183B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDFD711-7468-4ECE-BE28-C1A4D021183B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD0CDD14-790D-42DB-8EFD-0DF1EB7E45C0}
+	EndGlobalSection
+EndGlobal

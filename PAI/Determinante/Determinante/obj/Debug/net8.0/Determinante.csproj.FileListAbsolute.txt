@@ -1,0 +1,14 @@
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\bin\Debug\net8.0\Determinante.exe
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\bin\Debug\net8.0\Determinante.deps.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\bin\Debug\net8.0\Determinante.runtimeconfig.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\bin\Debug\net8.0\Determinante.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\bin\Debug\net8.0\Determinante.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\obj\Debug\net8.0\Determinante.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\obj\Debug\net8.0\Determinante.AssemblyInfoInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\obj\Debug\net8.0\Determinante.AssemblyInfo.cs
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\obj\Debug\net8.0\Determinante.csproj.CoreCompileInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\obj\Debug\net8.0\Determinante.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\obj\Debug\net8.0\refint\Determinante.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\obj\Debug\net8.0\Determinante.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\obj\Debug\net8.0\Determinante.genruntimeconfig.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\Determinante\Determinante\obj\Debug\net8.0\ref\Determinante.dll

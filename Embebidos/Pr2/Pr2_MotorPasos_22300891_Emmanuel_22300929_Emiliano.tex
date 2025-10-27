@@ -1,0 +1,157 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Practica 2: Practica del motor a pasos}
+\subtitle{Unidad I: Motores a CD Tema 1.1 \\ Sistemas Embebidos II 18MPEDS0729 \\ Ago-Dic 2025 \\ Centro de Enseñanza Tecnica Industrial Plantel Colomos\\Tgo. en Desarrollo de Software \\ Academia: Sistemas Digitales \\Profesor: Antonio Lozano Gonzáles }
+\date{3 de Septiembre de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 \\ \and Emiliano Arzate 22300929 7F1 \\}
+
+
+\begin{document}
+
+\maketitle
+\begin{center}
+   \includegraphics[scale=0.15]{../../cetilogo.jpg} 
+\end{center}
+\newpage
+
+\section{Objetivo}
+
+Mandar la secuencia de movimiento de un motor a pasos, por los pines
+del Arduino; para el control de un motor a pasos en medios pasos y pasos
+normal.
+
+\section{Desarrollo de la Práctica}
+
+\subsection{Condiciones de la Práctica}
+
+Realizar la secuencia de un motor a pasos. Deberá el usuario del
+programa, poder elegir entre medios pasos y pasos completos o normales.
+Una vez hecha la selección, la secuencia sera visible en el motor a
+pasos. También podrá elegir el usuario, si la secuencia sera en el
+sentido de las manecillas del reloj o al contrario y adjuntar el reporte
+respectivo.
+
+
+\subsection{Algoritmo o Diagrama de Flujo}
+
+\begin{enumerate}
+    \item Iniciar el programa y mostrar el menú de opciones al usuario.
+    \item Solicitar al usuario seleccionar el tipo de secuencia:
+    \begin{itemize}
+        \item Medios pasos
+        \item Pasos completos (normales)
+    \end{itemize}
+    \item Solicitar al usuario seleccionar el sentido de giro:
+    \begin{itemize}
+        \item Sentido de las manecillas del reloj
+        \item Sentido contrario a las manecillas del reloj
+    \end{itemize}
+    \item Configurar la secuencia de activación de los bobinados del motor según las opciones elegidas.
+    \item Ejecutar la secuencia en el motor a pasos, mostrando el movimiento correspondiente.
+  %  \item Permitir al usuario adjuntar el reporte respectivo.
+    \item Finalizar el programa.
+\end{enumerate}
+
+\subsection{ Código C}
+
+\lstinputlisting[language=C]{Pr2/Pr2.ino}
+
+
+\section{Observaciones y Conclusiones}
+
+\begin{itemize}
+    \item El parcial pasado ya habiamos usado un motor a pasos. 
+    \item Se realizaron funciones separadas, ya que tener cada rutina de que bobinas prender era muy poco optimo.
+    \item Estos motores sirven para ir avanzando poco a poco de "una", mas que todo seguido. 
+\end{itemize}
+  
+%\nocite{*}
+
+%\printbibliography[
+%heading=bibintoc,
+%title={ . }
+%]
+    \end{document}

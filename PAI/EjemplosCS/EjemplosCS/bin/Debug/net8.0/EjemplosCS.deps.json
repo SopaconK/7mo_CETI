@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EjemplosCS/1.0.0": {
+        "runtime": {
+          "EjemplosCS.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EjemplosCS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

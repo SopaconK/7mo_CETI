@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ComprString\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12E5CFD6-DF5A-4E8C-A707-1FAA7D24E890}|ComprString\\ComprString.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\comprstring\\comprstring\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12E5CFD6-DF5A-4E8C-A707-1FAA7D24E890}|ComprString\\ComprString.csproj|solutionrelative:comprstring\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ComprString\\ComprString\\Program.cs",
+              "RelativeDocumentMoniker": "ComprString\\Program.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\ComprString\\ComprString\\Program.cs",
+              "RelativeToolTip": "ComprString\\Program.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T13:59:22.099Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Resumen sobre Motores}
+\subtitle{Sistemas Embebidos II}
+\date{22 de Agosto de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 }
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Motores paso a paso}
+
+Un motor paso a paso es un dispositivo electromagnetico, el cual convierte
+una serie de pulsos electricos en desplazamientos ángulares. 
+
+Es decir, puede avanzar cierta cantidad de grados, ya sea pasos o medios pasos. \\
+
+Estos motores son ideales para mecanismos donde se requiera que los motores se muevan de una manera muy precisa, por eso son 
+muy usados, ya que puede moverse como lo quiera el usuario. \\
+
+Un motor paso a paso tiene una parte fija llamada estator, que esta hecha de bobinas sobre un material que atrae magnetismo. Además en el centro hay una parte movil llamada
+rotor, que puede girar libremente. \\
+
+Entonces cuando hacemos pasar corriente por las bobinas, se van encendiendo en un orden especifico, haciendo que el motor gire un poquito cada vez, crenado el paso angular. \\
+
+Existen tres tipos de motores paso a paso: 
+\begin{enumerate}
+    \item \textbf{De reluctancia variable: } no utiliza un iman permante, por lo que puede moverse sin limitaciones, aunque no es muy usado. 
+    \item \textbf{De iman permanente: } Son los mas utilizados en robotica y se dividen en dos 
+        \begin{enumerate}
+            \item \textbf{Unipolares: } son más fáciles de controlar porque solo requieren una secuencia de pulsos para las bobinas, sin necesidad de invertir el flujo de corriente
+            \item \textbf{Bipolares: } son más complejos de controlar, ya que requieren invertir la dirección de la corriente en las bobinas, lo cual se logra con un circuito puente H, pero a pesar de su complejidad, les permite generar un mayor torque.
+        \end{enumerate}
+    \item \textbf{Hibridos: } estos combinan las mejores características de los dos tipos anteriores para ofrecer un alto torque, una excelente precisión y un movimiento suave, lo que los hace ideales para aplicaciones de alto rendimiento.
+\end{enumerate}
+
+
+\section{Motores a CD}
+
+Los motores electricos son maquinas que se encargan de convertir la energía electríca en energía mecánica, a traves de la acción de los campos magnéticos producidos por sus bobinas. \\
+
+Estos motores tienen un alto par de arranque, y además es bastante más facil controlar su velocidad. Además por su construcción tambien pueden servir como generadores (convertir energía mecánica a energía electrica). \\
+
+Esta formado por los siguientes componentes:
+
+\begin{itemize}
+    \item \textbf{Carcaza: } La cual tiene en su interior dos imanes permanentes con forma de semicirculo. 
+    \item \textbf{Rotor: } El cual es un conjunto de bobinas que giran.
+    \item \textbf{Colector: } es un anillo deslizante que suministra energía a las bobinas del rotor.
+    \item \textbf{Escobilla: } Que es el contacto que transfiere energía al colector. 
+\end{itemize}
+
+A medida que la corriente fluye a través de las bobinas del rotor, se genera un campo magnético que interactúa con el campo de los imanes permanentes, creando la fuerza que impulsa el movimiento de giro. El colector y las escobillas trabajan en conjunto para invertir la dirección del flujo de corriente en el rotor en el momento exacto, asegurando que el movimiento de giro continúe en la misma dirección.
+
+
+\section{Servomotores}
+
+
+Un servomotor es un motor eléctrico, un juego de engranajes y una tarjeta de control, todo dentor de una carcasa de plástico, los cuales son muy conocidos por su precisión.  \\
+
+Un servo tiene capacidad de controlar su posición, mayormente dentro de cualquier posición en $180^{\circ}$, pero algunos pueden llegar a ser $360^{\circ}$. \\
+
+Los servomotores funcionan mediante PWM mediante pulsos a 50 Hz, depende de cuanto dure cada pulso se interpreta en que posición debe estar el motor.  \\
+
+
+Los distintos componentes de un servomotor son:
+
+\begin{itemize}
+    \item \textbf{Motor de CD: } Este se encarga de dar la movilidad al servomotor. 
+    \item \textbf{Engranajes Reductores: } Un tren de engranajes que cambia la gran velocidad del motor por fuerza de torque. 
+    \item \textbf{Sensor de desplazamiento: } Se utiliza para conocer la posición ángular del motor, suele ser un potenciometro.
+    \item \textbf{Circuito de control: } Este circuito compara la posición actual (medida por el sensor de desplazamiento) con la posición deseada, esta diferencia es amplificada y utilizada para mover el motor a donde sea necesario.
+\end{itemize}
+
+
+Existen dos tipos de servos, analógicos o digitales, pero la unica diferencia es que el digital tiene un microprocesador para identificar la PWM.
+
+
+    \end{document}

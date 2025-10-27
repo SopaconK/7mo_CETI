@@ -1,0 +1,246 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Practica 5: Sensor de Estado Sólido}
+\subtitle{Sistemas de Medicion y Control 18MPEDS0730 \\ Ago-Dic 2025 \\ Centro de Enseñanza Tecnica Industrial Plantel Colomos\\Tgo. en Desarrollo de Software \\ Academia: Sistemas Electrónicos\\Profesor: Diana Marisol Figueroa Flores }
+\date{9 de octubre de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 \\ \and Emiliano Arzate 22300929 7F1 \\}
+
+
+\begin{document}
+
+\maketitle
+\begin{center}
+   \includegraphics[scale=0.15]{../../cetilogo.jpg} 
+\end{center}
+\newpage
+
+\section{Objetivo}
+
+\textbf{Objetivo General:}
+Experimentar el funcionamiento de un LM35.
+\\
+
+
+\textbf{Objetivos Específicos:} 
+Verificar el funcionamiento básico, de un sensor de estado sólido y realizar su curva de respuesta, utilizando un acondicionamiento de amplificación para mandar la señal eléctrica a un sistema de adquisición de datos manejando una resolución de 8 bits.
+
+
+\section{Desarrollo Teórico}
+
+\subsection{Resumen }
+
+\indicacion{
+Elaborar un resumen sobre los diferentes tipos de sensores de estado sólido. Anexar las referencias bibliográficas, una referencia deberá ser virtual y la otra de un libro, considerando el formato APA correspondiente al tipo de referencia.
+}
+
+\subsection{Material}
+
+\indicacion{
+Anotar el material y equipo para llevar a cabo la práctica agregando los valores teóricos.}
+
+\subsection{Caracteristicas Electricas de los Componentes}
+\indicacion{
+   Anexar características eléctricas de todos los componentes a utilizar, así como los voltajes y corrientes máximas de trabajo, distribución de terminales, etc.
+}
+
+
+
+
+\subsection{Diagrama a Bloques}
+
+\begin{center}
+    \includegraphics{DiagramaBloques.png}
+\end{center}
+
+
+\subsection{Calculos}
+\indicacion{
+Realizar los cálculos correspondientes para el acoplamiento de la señal del termistor hacia el ADC.
+}
+
+\textbf{Voltaje por °C LM35: } 10mV \\
+
+\textbf{Resolución ADC 8 bits:  } $\frac{5V}{256}=19.5$mV \\
+
+\textbf{Amplificación: } $\frac{19.5}{10}=1.95$ \\
+
+En AmpOp Amplificador no inversor: 
+$R_f=R_g=1k$
+
+\[V_{\text{salida}} = V_{\text{Entrada}} ( 1+ \frac{R_f}{R_g})=2*V_{\text{Entrada}}\]
+
+Amplificación de 2.
+
+
+
+
+
+\subsection{Diagrama ISA}
+\indicacion{
+    Agregar tú diagrama utilizando la nomenclatura ISA.
+}
+
+
+\section{Desarrollo Practico}
+
+\subsection{Pasos}
+\indicacion{
+    Describe los pasos desde el inicio de la elaboración de la práctica hasta el término de la misma
+}
+
+\subsection{Diagrama Electrico}
+\indicacion{
+    Dibujar el Diagrama eléctrico utilizando algún programa para elaborar circuitos electrónicos, sin olvidar el valor de los componentes reales.
+}
+
+
+
+\subsection{Valores Prácticos}
+\begin{center}
+\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Equivalente en °C}& \textbf{Voltajes del LM35} & \textbf{Voltaje de entrada Analogica} & \textbf{Valor que se muestra °C sensor Voltaje del Sensor y Voltaje de Amplificado}\\
+\hline
+25°C& 0.248V & 0.469V & 0.469V 25°C\\
+\hline
+33°C& 0.330V& 0.619V& 0.619V 33°C \\[4px]
+\hline
+34°C& 0.340v& 0.637V& 0.637V 34°C\\[4px]
+\hline
+39°C& 0.385V& 0.731V& 0.731V 39°C\\[4px]
+\hline
+43°C & 0.425V& 0.806V& 0.806V 43°C\\[4px]
+\hline
+48°C& 0.475v& 0.900V& 0.900V 48°C\\[4px]
+\hline
+53°C & 0.529v& 0.993V& 0.993V 53°C\\[4px]
+\hline
+54°C & 0.543v& 1.012V& 1.1012V 54°C\\[4px]
+\hline
+56°C &0.558v & 1.050V& 1.050V 56°C\\[4px]
+\hline
+58°C& 0.578v& 1.08V& 1.08V 58°C\\[4px]
+\hline
+\end{tabular}
+\end{center}
+
+
+\textbf{Gráfica de Respuesta del Sensor de Estado Solido}
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        ylabel={Voltaje del LM35},
+        xlabel={Grados Centigrados LM35},
+        grid=major
+    ]
+        \addplot coordinates {(25,0.248) (33,0.330) (34,0.340) (39,0.385) (43,0.425) (48,0.475) (53,0.529) (54,0.543) (56,0.558) (58,0.578)};
+    \end{axis}
+\end{tikzpicture}
+ \end{center}
+
+
+
+\section{Observaciones y Conclusiones}
+
+\subsection{Observaciones}
+\indicacion{
+    Elaborar las observaciones correspondientes.
+}
+
+\subsection{Conclusiones Personales}
+\indicacion{
+    Realizar las conclusiones correspondientes de forma personal anexando usos y aplicaciones de lo aprendido.
+}
+
+
+  
+%\nocite{*}
+
+%\printbibliography[
+%heading=bibintoc,
+%title={ . }
+%]
+    \end{document}

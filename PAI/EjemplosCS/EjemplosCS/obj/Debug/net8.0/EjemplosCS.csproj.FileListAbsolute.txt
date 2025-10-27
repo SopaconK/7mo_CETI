@@ -1,0 +1,14 @@
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\bin\Debug\net8.0\EjemplosCS.exe
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\bin\Debug\net8.0\EjemplosCS.deps.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\bin\Debug\net8.0\EjemplosCS.runtimeconfig.json
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\bin\Debug\net8.0\EjemplosCS.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\bin\Debug\net8.0\EjemplosCS.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\obj\Debug\net8.0\EjemplosCS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\obj\Debug\net8.0\EjemplosCS.AssemblyInfoInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\obj\Debug\net8.0\EjemplosCS.AssemblyInfo.cs
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\obj\Debug\net8.0\EjemplosCS.csproj.CoreCompileInputs.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\obj\Debug\net8.0\EjemplosCS.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\obj\Debug\net8.0\refint\EjemplosCS.dll
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\obj\Debug\net8.0\EjemplosCS.pdb
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\obj\Debug\net8.0\EjemplosCS.genruntimeconfig.cache
+C:\Users\sopac\OneDrive\Escritorio\CETI\7mo\PAI\EjemplosCS\EjemplosCS\obj\Debug\net8.0\ref\EjemplosCS.dll

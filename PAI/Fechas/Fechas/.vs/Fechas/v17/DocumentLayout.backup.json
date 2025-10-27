@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Fechas\\Fechas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E0A1EDA-9D57-4E99-9622-08D44EF468AD}|Fechas\\Fechas.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\fechas\\fechas\\fechas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E0A1EDA-9D57-4E99-9622-08D44EF468AD}|Fechas\\Fechas.csproj|solutionrelative:fechas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Fechas\\Fechas\\Fechas\\Program.cs",
+              "RelativeDocumentMoniker": "Fechas\\Program.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Fechas\\Fechas\\Fechas\\Program.cs",
+              "RelativeToolTip": "Fechas\\Program.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T18:16:03.005Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
