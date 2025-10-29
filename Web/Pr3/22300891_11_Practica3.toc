@@ -6,4 +6,6 @@
 \contentsline {subsection}{\numberline {2.4}Retroalimentación}{4}{subsection.7}%
 \contentsline {subsection}{\numberline {2.5}Prototipo}{5}{subsection.8}%
 \contentsline {section}{\numberline {3}Codigo}{5}{section.9}%
+\contentsline {section}{\numberline {4}Capturas de Pantalla}{6}{section.10}%
+\contentsline {section}{\numberline {5}Conclusión}{7}{section.11}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

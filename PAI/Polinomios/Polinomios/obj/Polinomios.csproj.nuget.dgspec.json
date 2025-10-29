@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj": {}
+    "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj": {
+    "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj",
+        "projectUniqueName": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj",
         "projectName": "Polinomios",
-        "projectPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj",
+        "projectPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj",
         "packagesPath": "C:\\Users\\sopac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\obj\\",
+        "outputPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

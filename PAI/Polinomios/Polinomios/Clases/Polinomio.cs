@@ -58,8 +58,9 @@ namespace Polinomios.Clases
                 estaDerivado=true;
             }
             double x = 1434;
-            while (Math.Abs(evaluar(x)) > 0.001)
+            while (Math.Abs(evaluar(x)) > 0.0000000001)
             {
+
                 x = iterar(x);
             }
             return x;

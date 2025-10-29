@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Grafos\\Grafos\\Grafos.csproj": {}
+    "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Grafos\\Grafos\\Grafos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Grafos\\Grafos\\Grafos.csproj": {
+    "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Grafos\\Grafos\\Grafos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Grafos\\Grafos\\Grafos.csproj",
+        "projectUniqueName": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Grafos\\Grafos\\Grafos.csproj",
         "projectName": "Grafos",
-        "projectPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Grafos\\Grafos\\Grafos.csproj",
+        "projectPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Grafos\\Grafos\\Grafos.csproj",
         "packagesPath": "C:\\Users\\sopac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Grafos\\Grafos\\obj\\",
+        "outputPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Grafos\\Grafos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

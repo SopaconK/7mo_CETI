@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\",
+  "WorkspaceRootPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEDFD711-7468-4ECE-BE28-C1A4D021183B}|Polinomios\\Polinomios.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\polinomios\\polinomios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEDFD711-7468-4ECE-BE28-C1A4D021183B}|Polinomios\\Polinomios.csproj|solutionrelative:polinomios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEDFD711-7468-4ECE-BE28-C1A4D021183B}|Polinomios\\Polinomios.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\polinomios\\polinomios\\clases\\polinomio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DEDFD711-7468-4ECE-BE28-C1A4D021183B}|Polinomios\\Polinomios.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\7mo_ceti\\pai\\polinomios\\polinomios\\clases\\polinomio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DEDFD711-7468-4ECE-BE28-C1A4D021183B}|Polinomios\\Polinomios.csproj|solutionrelative:polinomios\\clases\\polinomio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DEDFD711-7468-4ECE-BE28-C1A4D021183B}|Polinomios\\Polinomios.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\pai\\polinomios\\polinomios\\polinomios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{DEDFD711-7468-4ECE-BE28-C1A4D021183B}|Polinomios\\Polinomios.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\7mo_ceti\\pai\\polinomios\\polinomios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEDFD711-7468-4ECE-BE28-C1A4D021183B}|Polinomios\\Polinomios.csproj|solutionrelative:polinomios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEDFD711-7468-4ECE-BE28-C1A4D021183B}|Polinomios\\Polinomios.csproj|c:\\users\\sopac\\onedrive\\escritorio\\ceti\\7mo\\7mo_ceti\\pai\\polinomios\\polinomios\\polinomios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DEDFD711-7468-4ECE-BE28-C1A4D021183B}|Polinomios\\Polinomios.csproj|solutionrelative:polinomios\\polinomios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Polinomio.cs",
-              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\Clases\\Polinomio.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\Clases\\Polinomio.cs",
               "RelativeDocumentMoniker": "Polinomios\\Clases\\Polinomio.cs",
-              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\Clases\\Polinomio.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\Clases\\Polinomio.cs",
               "RelativeToolTip": "Polinomios\\Clases\\Polinomio.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAcwDQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwDwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T19:10:44.921Z",
               "EditorCaption": ""
@@ -40,25 +40,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Polinomios",
-              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj",
+              "Title": "Polinomios.csproj",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj",
               "RelativeDocumentMoniker": "Polinomios\\Polinomios.csproj",
-              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\Polinomios.csproj",
               "RelativeToolTip": "Polinomios\\Polinomios.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-20T19:10:17.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T19:10:17.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\Program.cs",
               "RelativeDocumentMoniker": "Polinomios\\Program.cs",
-              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Polinomios\\Polinomios\\Program.cs",
+              "ToolTip": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Polinomios\\Polinomios\\Program.cs",
               "RelativeToolTip": "Polinomios\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAASwB0AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T19:10:02.379Z",
               "EditorCaption": ""
