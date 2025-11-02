@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#principal">Principal</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#Experiencia">Experiencia</a></li>
+            <li><a href="#Portafolio">Portafolio</a></li>
+        </ul>
+    </nav>
     <div id="principal">
     <div class="container">
         <div class="box">
@@ -16,6 +25,7 @@
 
         </div>
         <div class="box">
+            <b>
             <h1>Emmanuel Buenrostro</h1> 
 
             <p>
@@ -25,15 +35,31 @@
                 Desarrollo de Software <br>
                 Programacion WEB <br>
             </p>
+            </b>
              <div class="container"> 
-                <img style="border: 0px;" src="telefono.png" height="40px">
-              <img style="border: 0px; margin: 0px 0px 0px 50px" src="correo.png" height="40px">
+                <a href="tel:3320410653"><img style="border: 0px;" src="telefono.png" height="40px"></a>
+            <a href="mailto:emmanuelbb2000@gmail.com">  <img style="border: 0px; margin: 0px 0px 0px 50px" src="correo.png" height="40px"></a>
             </div>
         </div>
     </div>
     <hr>
-    <div class="container">
-        <div class="box">
+    <div class="parallax">
+       <div class="box" id="sobre-mi">
+            <h2>Acerca de mi</h2>
+
+            <p>
+                Soy un estudiante de desarrollo de software apasionado por las <br>
+                matematicas, asi como la programación competetiva.  Participo <br>
+                en olimpiadas de matematicas e informatica, y me interesa entrenar <br>
+                a los participantes de estas. Actualmente ayudo activamente en el comite <br>
+                de la Olimpiada de Matemáticas de Jalisco.
+            </p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container" id="Experiencia">
+         <div class="box">
             <h2>Formacion Academica</h2>
 
             <p>
@@ -42,6 +68,8 @@
                 -Plata en la International Mathematical Olympiad (IMO) <br>
             </p>
         </div>
+
+        <hr>
        
         <div class="box">
            <h2>Experiencia Laboral</h2>
@@ -54,12 +82,37 @@
             </p>
            
         </div>
+
     </div>
     <hr> 
    
-    <div class="box">
+
+
+    <div class="box" id="Portafolio">
          <h2>Portafolio</h2> 
      </div>
+
+     <div class="container">
+        <div class="box">
+            <img id="img1" class="imghd" src="pr8.png" >
+        </div>
+
+         <div class="box">
+            <img id="img2" class="imgp" src="pr1.png" height="200px">
+
+            <div class="container">
+                <button id="btnant" class="btn-ghost" onclick="atras();">-</button>
+                
+                <button id="btnnext" class="btn-ghost" onclick="adelante();">+</button>
+            </div>
+        </div>
+         <div class="box">
+            <img id="img3" class="imghd"  src="pr2.png" >
+        </div>
+     </div>
+
+     <!-- <hr>
+
     <div class="container">
         <div class="box"> 
         <img src="pr1.png" height="150px"> <br> <br>
@@ -77,10 +130,11 @@
         <img src="pr4.png" height="150px"> <br> <br>
         <img src="pr8.png" width="300px">
         </div>
-    </div>
+    </div> -->
    
     <hr>
 
     </div>
+     <script src="slider.js"></script>
 </body>
 </html>
