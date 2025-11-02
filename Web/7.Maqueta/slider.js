@@ -1,4 +1,4 @@
-let imagenes=["pr1.png", "pr2.png", "pr3.png", "pr4.png", "pr5.png", "pr6.png", "pr7.png", "pr8.png"];
+let imagenes=["img/pr1.png", "img/pr2.png", "img/pr3.png", "img/pr4.png", "img/pr5.png", "img/pr6.png", "img/pr7.png", "img/pr8.png"];
 let ind=0;
 
 const img1=document.getElementById("img1");
