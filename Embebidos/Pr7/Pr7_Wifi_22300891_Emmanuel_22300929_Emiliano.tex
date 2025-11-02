@@ -1,0 +1,145 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Practica 8: Practica de arduino y shield wifi}
+\subtitle{Unidad II: Interfaces de comunicación Tema 2.1 \\ Sistemas Embebidos II 18MPEDS0729 \\ Ago-Dic 2025 \\ Centro de Enseñanza Tecnica Industrial Plantel Colomos\\Tgo. en Desarrollo de Software \\ Academia: Sistemas Digitales \\Profesor: Antonio Lozano Gonzáles }
+\date{24 de Octubre de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 \\ \and Emiliano Arzate 22300929 7F1 \\}
+
+
+\begin{document}
+
+\maketitle
+\begin{center}
+   \includegraphics[scale=0.15]{../../cetilogo.jpg} 
+\end{center}
+\newpage
+
+\section{Objetivo}
+Controlar un led rgb por medio de internet, para manipular cualquier color del led rgb y, encender y/o apagar cada color a distancia.
+
+\section{Desarrollo de la Práctica}
+
+\subsection{Condiciones de la Práctica}
+Consiste en usar tres salidas, las cuales serán controladas desde una pagina web. Se deberá utilizar un Arduino y una shield wifi, ademas de un led rgb. Por lo tanto se deberá tener en dicha pagina tres perillas, una perilla dirá color rojo; la otra dirá color verde y, la última dirá color azul . Y de está manera encender cada uno de los colores del led rgb, con una intensidad diferente y, de esta manera ver en el led rgb, cualquier color; y todo controlado desde internet.
+
+
+\subsection{Algoritmo o Diagrama de Flujo}
+
+\begin{itemize}
+  \item Inicializar comunicación serie.
+  \item Conectar a la red WiFi con SSID y contraseña.
+  \item Configurar canales PWM para los pines RGB.
+  \item Iniciar servidor HTTP y registrar rutas ("/" y "/slider").
+  \item Generar página HTML con sliders para R, G y B.
+  \item En la ruta "/slider": leer parámetros (color, valor), actualizar variable y escribir PWM.
+  \item Responder al cliente y continuar en loop (espera/idle).
+\end{itemize}
+
+\subsection{ Código C}
+
+\lstinputlisting[language=C]{pr7/pr7.ino}
+
+
+\section{Observaciones y Conclusiones}
+
+\begin{itemize}
+   \item Se uso papel mantequilla para mayor difuminación de los colores
+   \item A veces se tarda bastante en contestar y un cambio en la pagina web no se muestra en el led.
+\end{itemize}
+  
+
+\section{Imagen}
+
+\begin{center}
+    \includegraphics[scale=0.3]{imagen_circuito.jpg}
+\end{center}
+%\nocite{*}
+
+%\printbibliography[
+%heading=bibintoc,
+%title={ . }
+%]
+    \end{document}

@@ -1,0 +1,148 @@
+\documentclass[11pt]{scrartcl}
+
+\usepackage[sexy]{evan}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{graphics}
+\usepackage{tikz}
+\usepackage{ amssymb }
+\usepackage[dvipsnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{listings}
+
+
+\definecolor{noseve}{RGB}{242,242,242}
+
+\newcommand{\camod}[1]{\frac{\ZZ}{#1 \ZZ}}
+\newcommand{\modm}[1]{\text{ mod } #1}
+\newcommand{\campm}[1]{\frac{\ZZ}{m\ZZ}}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphsize}{\scriptsize}
+\renewcommand{\epigraphwidth}{60ex}
+
+
+\definecolor{dcol0}{HTML}{C8E6C9}
+\definecolor{dcol1}{HTML}{D4E9B3}
+\definecolor{dcol2}{HTML}{E5ED9A}
+\definecolor{dcol3}{HTML}{FFF59D}
+\definecolor{dcol4}{HTML}{FFE082}
+\definecolor{dcol5}{HTML}{FFCC80}
+\definecolor{dcol6}{HTML}{FFAB91}
+\definecolor{dcol7}{HTML}{F49890}
+\definecolor{dcol8}{HTML}{E57373}
+\definecolor{dcol9}{HTML}{D32F2F}
+
+\makeatletter
+\newcommand{\getcolorname}[1]{dcol#1}
+\makeatother
+
+\newcommand{\dif}[1]{%
+    \edef\colorindex{\number\fpeval{floor(#1)}}%
+    \edef\fulltext{#1}%
+    \colorbox{\getcolorname{\colorindex}}{%
+        \ifnum\colorindex>8
+            \textbf{\textcolor{white}{\,\fulltext\,}}%
+        \else
+            \textbf{\textcolor{black}{\,\fulltext\,}}%
+        \fi
+    }%
+}
+% Variable para dificultad (inicial 0)
+\newcommand{\thmdifficulty}{0}
+
+% Comando para asignar dificultad antes del problema
+\newcommand{\problemdiff}[1]{\renewcommand{\thmdifficulty}{#1}}
+
+% Estilo del problema que incluye dificultad antes del título
+\declaretheoremstyle[
+    headfont=\color{blue!40!black}\normalfont\bfseries,
+    headformat={%
+      \dif{\thmdifficulty}\quad \NAME~\NUMBER\ifx\relax\EMPTY\relax\else\ \NOTE\fi
+    },
+    postheadspace=1em,
+    spaceabove=8pt,
+    spacebelow=8pt,
+    bodyfont=\normalfont
+]{problemstyle}
+
+    \declaretheorem[style=problemstyle,name=Problema,sibling=theorem]{problema}
+    \declaretheorem[style=problemstyle,name=Problema,numbered=no]{problema*}
+
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{referencias.bib}
+
+\newcommand{\indicacion}[1]{\noindent\textit{\small #1}}
+
+
+\title {Practica 8: Practica de arduino y shield Bluetooth}
+\subtitle{Unidad II: Interfaces de comunicación Tema 2.1 \\ Sistemas Embebidos II 18MPEDS0729 \\ Ago-Dic 2025 \\ Centro de Enseñanza Tecnica Industrial Plantel Colomos\\Tgo. en Desarrollo de Software \\ Academia: Sistemas Digitales \\Profesor: Antonio Lozano Gonzáles }
+\date{24 de Octubre de 2025}
+\author{Emmanuel Buenrostro 22300891 7F1 \\ \and Emiliano Arzate 22300929 7F1 \\}
+
+
+\begin{document}
+
+\maketitle
+\begin{center}
+   \includegraphics[scale=0.15]{../../cetilogo.jpg} 
+\end{center}
+\newpage
+
+\section{Objetivo}
+Mandar un mensaje desde su celular por medio de bluetooth, a la LCD  y de esta manera establecer comunicación entre el Arduino y su celular.
+
+\section{Desarrollo de la Práctica}
+
+\subsection{Condiciones de la Práctica}
+Hacer la , la cual consiste en usar una shield bluetooth y un arduino, ademas de su celular. Con sus conocimientos de Android Studio hacer v una aplicación que mande el teclado de su celular a la LCD. (También pueden utilizar una app de terceros y adaptarla a esta práctica)
+
+
+\subsection{Algoritmo o Diagrama de Flujo}
+
+\begin{enumerate}
+  \item Inicializar LCD y las comunicaciones serie (Serial y Serial1) a 9600 bps; mostrar mensaje inicial en LCD.
+  \item Mientras haya datos disponibles en Serial1, leer un carácter.
+  \item Si el carácter es 'n' (fin de mensaje):
+    \begin{enumerate}
+      \item Imprimir el mensaje completo por Serial.
+      \item Limpiar LCD y mostrar el mensaje: si la longitud > 16, mostrar los primeros 16 caracteres en la línea 1 y el resto en la línea 2; si no, mostrar todo en la línea 1.
+      \item Vaciar el buffer del mensaje.
+    \end{enumerate}
+  \item Si el carácter no es 'n' y no es 'r', concatenarlo al buffer del mensaje.
+  \item Repetir el proceso continuamente.
+\end{enumerate}
+
+\subsection{ Código C}
+
+\lstinputlisting[language=C]{pr8/pr8.ino}
+
+
+\section{Observaciones y Conclusiones}
+
+\begin{itemize}
+    \item Esta practica era bastante parecida a una de Interfaces del semestre pasado
+    \item Hay una app que hace exactamente lo que queremos para poder conectarnos.
+\end{itemize}
+  
+
+\section{Imagen}
+
+\begin{center}
+    \includegraphics[scale=0.3]{imagen_circuito.jpg}
+\end{center}
+%\nocite{*}
+
+%\printbibliography[
+%heading=bibintoc,
+%title={ . }
+%]
+    \end{document}
