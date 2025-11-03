@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\Complejos.csproj",
+      "projectUniqueName": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Complejos\\Complejos\\Complejos.csproj",
       "projectName": "Complejos",
-      "projectPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\Complejos.csproj",
+      "projectPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Complejos\\Complejos\\Complejos.csproj",
       "packagesPath": "C:\\Users\\sopac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\PAI\\Complejos\\Complejos\\obj\\",
+      "outputPath": "C:\\Users\\sopac\\OneDrive\\Escritorio\\CETI\\7mo\\7mo_CETI\\PAI\\Complejos\\Complejos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

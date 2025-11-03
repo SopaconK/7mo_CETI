@@ -28,20 +28,87 @@ namespace Complejos
         private void cmdSumarComplejos(object sender, RoutedEventArgs e)
         {
             Complejo a, b;
-            int r, i;
-            r = int.Parse(txtReal1.Text);
-            i = int.Parse(txtImg1.Text);
+            double r, i;
+            r = double.Parse(txtReal1.Text);
+            i = double.Parse(txtImg1.Text);
 
             a = new Complejo(r, i);
             b = new Complejo(
-                int.Parse(txtReal2.Text),
-                int.Parse(txtImg2.Text)
+                double.Parse(txtReal2.Text),
+                double.Parse(txtImg2.Text)
                 );
 
-            Complejo s = a.Suma(a, b);
+            Complejo s = a+b;
 
             txtResultadoReal.Text = s.Real.ToString();
             txtResultadoImg.Text =s.Imaginario.ToString();
         }
+
+
+        private void cmdRestarComplejos(object sender, RoutedEventArgs e)
+        {
+            Complejo a, b;
+            double r, i;
+            r = double.Parse(txtReal1.Text);
+            i = double.Parse(txtImg1.Text);
+
+            a = new Complejo(r, i);
+            b = new Complejo(
+                double.Parse(txtReal2.Text),
+                double.Parse(txtImg2.Text)
+                );
+
+            Complejo s = a - b;
+
+            txtResultadoReal.Text = s.Real.ToString();
+            txtResultadoImg.Text = s.Imaginario.ToString();
+        }
+
+        private void cmdMultiplicarComplejos(object sender, RoutedEventArgs e)
+        {
+            Complejo a, b;
+            double r, i;
+            r = double.Parse(txtReal1.Text);
+            i = double.Parse(txtImg1.Text);
+
+            a = new Complejo(r, i);
+            b = new Complejo(
+                double.Parse(txtReal2.Text),
+                double.Parse(txtImg2.Text)
+                );
+
+            Complejo s = a * b;
+
+            txtResultadoReal.Text = s.Real.ToString();
+            txtResultadoImg.Text = s.Imaginario.ToString();
+        }
+
+        private void cmdDividirComplejos(object sender, RoutedEventArgs e)
+        {
+            Complejo a, b;
+            double r, i;
+            r = double.Parse(txtReal1.Text);
+            i = double.Parse(txtImg1.Text);
+
+            a = new Complejo(r, i);
+            b = new Complejo(
+                double.Parse(txtReal2.Text),
+                double.Parse(txtImg2.Text)
+                );
+
+            if (b.Real==0 && b.Imaginario==0)
+            {
+                txtResultadoReal.Text = "0";
+                txtResultadoImg.Text = "0";
+
+                return;
+            }
+            Complejo s = a / b;
+
+            txtResultadoReal.Text = s.Real.ToString();
+            txtResultadoImg.Text = s.Imaginario.ToString();
+        }
+
+
     }
 }

@@ -13,7 +13,16 @@
         <TextBox x:Name="txtImg1" HorizontalAlignment="Left" Height="18" Margin="222,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
         <TextBox x:Name="txtResultadoImg" HorizontalAlignment="Left" Height="18" Margin="625,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
         <TextBox x:Name="txtResultadoReal" HorizontalAlignment="Left" Height="18" Margin="467,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
-        <Button x:Name="cmdSumar" Content="Sumar" HorizontalAlignment="Left" Height="46" Margin="352,217,0,0" VerticalAlignment="Top" Width="128" Click="cmdSumarComplejos"/>
+        <Button x:Name="cmdSumar" Content="Sumar" HorizontalAlignment="Left" Height="46" Margin="276,189,0,0" VerticalAlignment="Top" Width="128" Click="cmdSumarComplejos"/>
+        <Button x:Name="cmdRestar" Content="Restar" HorizontalAlignment="Left" Height="46" Margin="276,258,0,0" VerticalAlignment="Top" Width="128" Click="cmdRestarComplejos"/>
+        <Button x:Name="cmdMultiplicar" Content="Multiplicar" HorizontalAlignment="Left" Height="46" Margin="467,190,0,0" VerticalAlignment="Top" Width="128" Click="cmdMultiplicarComplejos"/>
+        <Button x:Name="cmdDividir" Content="Dividir" HorizontalAlignment="Left" Height="46" Margin="467,259,0,0" VerticalAlignment="Top" Width="128" Click="cmdDividirComplejos"/>
+        <Label Content="+" HorizontalAlignment="Left" Height="26" Margin="182,46,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.56,0.425"/>
+        <Label Content="i" HorizontalAlignment="Left" Height="26" Margin="330,46,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.56,0.425"/>
+        <Label Content="+" HorizontalAlignment="Left" Height="26" Margin="182,109,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.56,0.425"/>
+        <Label Content="i" HorizontalAlignment="Left" Height="26" Margin="330,109,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.56,0.425"/>
+        <Label Content="+" HorizontalAlignment="Left" Height="26" Margin="593,73,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.56,0.425"/>
+        <Label Content="i" HorizontalAlignment="Left" Height="26" Margin="738,73,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.56,0.425"/>
 
     </Grid>
 </Window>
