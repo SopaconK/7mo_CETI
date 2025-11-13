@@ -1,4 +1,4 @@
-/*
+a/*
   Control de LED RGB con ESP32 y Servidor Web
   - Código actualizado para ser compatible con la versión 3.x del Core de ESP32 para Arduino.
   - Autor de la actualización: Gemini
